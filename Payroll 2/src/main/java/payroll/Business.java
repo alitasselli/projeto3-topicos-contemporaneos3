@@ -37,15 +37,17 @@ public class Business {
   @Column(length = 12, nullable = false)
   private Integer insurance;
 
-  Business() {}
 
-  Business(String description, Long id) {
+  Business(String description, long id, String codee, int tax, int insurance) {
 
     this.description = description;
     this.id = id;
+    this.codee = codee;
+    this.tax = tax;
+    this.insurance = insurance;
   }
 
-  public Long getId() {
+public Long getId() {
     return this.id;
   }
 
