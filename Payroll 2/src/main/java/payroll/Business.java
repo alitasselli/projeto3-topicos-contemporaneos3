@@ -25,16 +25,16 @@ public class Business {
   )
   private Long id;
   
-  @Column(length = 12)
+  @Column(length = 12, nullable = false)
   private String codee;
   
-  @Column(length = 50)
+  @Column(length = 50, nullable = false)
   private String description;
   
-  @Column(length = 12)
+  @Column(length = 12, nullable = false)
   private Integer tax;
   
-  @Column(length = 12)
+  @Column(length = 12, nullable = false)
   private Integer insurance;
 
   Business() {}
